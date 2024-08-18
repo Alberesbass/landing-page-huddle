@@ -1,63 +1,55 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #fff;
-  background: url(../images/bg-desktop.svg) center center no-repeat;
-  background-color: var(--bgc-violet);
+  background: url(../images/bg-desktop.svg) no-repeat;
   background-size: cover;
-  max-width: 1440px;
+  background-color: var(--bgc-violet);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
-.cabecalho {
-  padding: 40px 20px 20px 20px;
-  width: 100%;
+.container-principal {
   max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 2rem;
 }
 
 .cabecalho .logo {
-  max-width: 264px;
-  padding: 25px;
+  width: 170px;
+  padding-bottom: 20px;
 }
 
-main {
-  width: 100%;
-  max-width: 1440px;
-  padding: 35px;
+.secao-principal {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
-main .container-principal {
-  display: flex;
-  gap: 55px;
-}
-
-main .container-principal .container-ilustracao .imagem-conteito {
-  min-width: 100%;
-  height: 100%;
-}
-
-main .container-principal .informacoes .titulo {
+.informacoes .titulo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 600;
+  line-height: 1.7;
   margin-bottom: 20px;
-  margin-top: 40px;
 }
 
-main .container-principal .informacoes .descricao {
+.informacoes .descricao {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 30px;
 }
 
-.container-principal .informacoes .btn-cadastro {
+.informacoes .btn-cadastro {
   background-color: #fff;
   border: none;
   border-radius: 50px;
@@ -66,38 +58,26 @@ main .container-principal .informacoes .descricao {
   padding: 14px;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  display: inline-block;
   font-family: "Poppins", sans-serif;
-  box-shadow: 5px 10px 30px #000;
+  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
   transition: 0.3s;
 }
 
-.container-principal .informacoes .btn-cadastro:hover {
+.informacoes .btn-cadastro:hover {
   background-color: var(--hover-soft-magenta);
   color: #fff;
 }
 
-.footer {
+.footer .redes-sociais ul {
   display: flex;
   justify-content: flex-end;
-  min-width: 100%;
-  max-width: 1440px;
-  margin-top: auto;
-  align-items: center;
-  padding: 35px;
-}
-
-.footer .redes-sociais {
-  display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   gap: 15px;
 }
 
-.footer .redes-sociais a i {
+.redes-sociais a i {
   color: #fff;
   width: 40px;
   height: 40px;
